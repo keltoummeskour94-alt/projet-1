@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Boutique Keltoum - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="haut">
+
+    <nav>
+        <a href="index.html">Accueil</a> |
+        <a href="produits.html">Produits</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1>Contactez-nous</h1>
+    <p>Une question sur un produit ? Remplissez le formulaire ci-dessous.</p>
+
+    <form action="#" method="post">
+
+        <label for="nom">Nom complet * :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="email">Email * :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="tel">Téléphone :</label><br>
+        <input type="tel" id="tel" name="telephone" placeholder="06 12 34 56 78"><br><br>
+
+        <label for="objet">Objet de votre message * :</label><br>
+        <select id="objet" name="objet" required>
+            <option value="">-- Choisissez --</option>
+            <option value="question">Question sur un produit</option>
+            <option value="commande">Suivi de commande</option>
+            <option value="conseil">Demande de conseil peau</option>
+            <option value="autre">Autre</option>
+        </select><br><br>
+
+        <label>vous etes :</label><br>
+        <input type="radio" id="client" name="statut" value="client">
+        <label for="client">client</label>
+        <input type="radio" id="visiteur" name="statut" value="visiteur">
+        <label for="visiteur">visiteur</label><br><br>
+        <label for="message">votre message * :</label><br>
+        <textarea id="message" name="mesaage" rows="5" cols="40" required placeholder="Ecrivez votre message ici..."></textarea><br><br>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Je souhaite recevoir les nouveautés et promotions</label><br>
+        <input type="checkbox" id="conditions" name="conditions" required>
+        <label for="conditions">J'accepte les conditions *</label><br><br>
+
+        <!-- 2 boutons demandés -->
+        <button type="submit">Envoyer</button>
+        <button type="reset">Effacer</button>
+
+    </form>
+
+    <hr>
+    <p>Email direct:<a href="mailto:boutique.keltoum@example.com"> boutique.keltoum@example.com</a></p>
+    <p>telephone:<a href="tel:+21212345678">06 12 34 56 78</a></p>
+    <p><a href="https://mrarila.ma target="_blank">site inspiration :mrarila.ma</a></p>
+
+    <footer>
+        <p>Meskour Keltoum - Groupe: [A] - 2024/2025</p>
+        <a href="#haut">Retour en haut</a> | <a href="index.html">Retour à l'accueil</a>
+    </footer>
+
+</body>
+</html>
